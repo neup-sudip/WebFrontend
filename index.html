@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Country Excursion</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="icon ion-md-close"></i>
+                </div>
+    
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="LOGO" title="Home Page">
+                    </a>
+                </div>
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home <i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Destinations ▼</a>
+                        <ul class="sub-menu"> 
+                            <li>
+                                <a href="destinations.html">View All</a>   
+                            </li>
+                            <li>
+                                <a href="#">Top Destinations ➤</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="destinations.html#gosaikunda">Holy Gosaikunda</a>
+                                    </li>
+                                    <li>
+                                        <a href="destinations.html#mardi">Mardi Himal</a>
+                                    </li>  
+                                    <li>
+                                        <a href="destinations.html#poonhill">Ghorepani/Poonhill</a> 
+                                    </li>
+                                </ul>   
+                            </li> 
+                            <li>
+                                <a href="destinations.html#langtang">Langtang Himal</a>                             
+                            </li>
+                         </ul>
+                    </li> 
+
+
+                    <!-- <li> -->
+                        <!-- <a href="ourJourney.html">Our Journey <i class="fas fa-walking"></i></a>     -->
+                    <!-- </li> -->
+
+
+                    <!-- <li> -->
+                        <!-- <a href="#"><i class="fas fa-user" aria-hidden="true"></i> Profile </a>     -->
+                        <!-- <ul class="sub-menu"> -->
+                            <!-- <li> -->
+                                <!-- <a href="configuration.html">Log In</a> -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="">My Profile</a>     -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="">Favourite Destinations</a>  -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="">Booked Destinations</a>     -->
+                            <!-- </li>         -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+
+                    <li class="move-right btn">
+                        <a href="bookTravel.html">Book Now <i class="fas fa-calendar-check"></i></a>
+                    </li>
+                </ul>      
+            </nav>
+        </div>  
+    </header>
+
+
+    <section>
+        <!-- top view section -->
+        <div class="frame">
+            <div class="inner-frame">-
+                <h1 class="welcome">WELCOME TO NEPAL</h1>
+                <p><span>Spend</span> <span>Less</span> <span>Travel</span> <span>More</span> </p> 
+
+                <div class="quote">       
+                    <p class="quote-p2">  <i class="fas fa-walking"></i>
+                        Travelling is a destiny of our life that
+                        needs to be fullfilled cause we are
+                        moving towards death everyday. <i class="fas fa-walking"></i>
+                    </p>
+                </div>
+
+                <div class="search-nav">
+                   <ul class="search-menu">
+                       <li>
+                           <input type="search" name="" id="search-field" onkeyup="Scan();" placeholder= "🔎 Search Your Destination">
+                           <ul class="list-menu">
+                               <li><a class="items hidden" href="destinations.html#gosaikunda">Holy Gosaikunda</a></li>
+                               <li><a class="items hidden" href="destinations.html#poonhill">Ghorepani/ poonhill</a></li>
+                               <li><a class="items hidden" href="destinations.html#mardi">Mardi Himal</a></li>
+                               <li><a class="items hidden" href="destinations.html#langtang">Langtang Valley</a></li>
+                           </ul>
+                       </li>
+                    </ul>
+                   <button id="search-btn" onclick="searchDes();" draggable="true" type="submit"><i class="fa fa-search icon" aria-hidden="true"></i> Search</button>    
+                </div>
+
+            </div>
+        </div>
+
+        <!-- trending section -->
+        <h1 class="trend-heading">Top Destinations</h1>
+        <div class="trending">
+            <!-- first trending  -->
+            <div id="trend-1" class="trend">
+                <div class="img-div">
+                    <img src="img/gosaikunda.jpg" alt="">
+                </div> 
+                <div class="discription">
+                    <h3>Holy Gosaikunda</h3>
+                    <p>Religious Gosaikunda Lake is famous for Hindu and Buddhist pilgrimage and equally popular for tourists. 
+                        Langtang National Park, Excellent views of Ganesh Himal, Langtang Himalayas Manaslu and Annapurna massif,
+                        Traditional tamang people and their culture, Trekking peaks to climb, Abundant wildlife are 
+                        the major highlights of this trek. It is popular for red panda, Himalayan black bear, 
+                        snow leopard, wild dog, ghoral, serow and more than 250 species of birds.
+                    </p>
+                    <a href="destinations.html#gosaikunda"><button class="read-btn">Read More &#10148;</button></a>
+                </div>    
+            </div>
+            <!-- second trending -->
+            <div id="trend-2" class="trend hidden" >
+                <div class="img-div">
+                    <img src="img/poonhill.jpg" alt="">
+                </div>
+                <div class="discription">
+                    <h3>Ghorepani/ Poonhill</h3>
+                    <p>Poon Hill trek is a short and relatively easy trek into the Annapurna region. 
+                        This trek is suitable for those who do not have much time to spend with a burning desire to observe the beauty of snow-capped mountains. 
+                        Nepal Hidden Treks and Expedition organize this trek in 4 days from Kathmandu or Pokhara.
+                        View of Dhaulagiri(8167M) Manaslu(8163m) and Annapurna I(8091m) and others Himalayas.  
+                    </p>
+                   <a href="destinations.html#poonhill"><button class="read-btn">Read More &#10148;</button></a>
+                </div>
+            </div>
+            <!-- third trending -->
+            <div id="trend-3" class="trend hidden">
+                <div class="img-div">
+                    <img src="img/mardi.jpg" alt="">
+                </div>
+                <div class="discription">
+                    <h3>Mardi Himal</h3>
+                    <p>Fantastic Mardi Himal is located just east of one of the most legendary trekking destination of Nepal,
+                    the Annapurna Base Camp trek. The base of Mardi Himal and the Annapurna region´s most iconic mount Machapuchhre 
+                    literally meaning "Fish tail". The trail goes along small winding paths, through enchanted rhododendron forests 
+                    until you climb out of the forest at an elevation around 3,300 meter.
+                    </p>
+                    <a href="destinations.html#mardi"><button class="read-btn">Read More &#10148;</button></a>
+                </div>                              
+            </div>
+        </div>
+        <!-- for sliding trending -->
+        <div class="btn-trend">
+            <button class="btns" disabled id="btn-1" onclick="makeVisible('trend-1');" type="submit"><p>HOLY GOSAIKUNDA</p></button>
+            <button class="btns" id="btn-2" onclick="makeVisible('trend-2');" type="submit"><p>GHOREPANI/ POONHILL</p></button>
+            <button class="btns" id="btn-3" onclick="makeVisible('trend-3');" type="submit"><p>MARDI HIMAL</p></button>
+        </div>
+
+        <!-- our journey -->
+        <h1 class="trend-heading">Our Journey</h1>
+        <div class="our-journey">
+            <div class="journey">
+                <h3>Our Journey</h3> 
+                <p>On <strong>1999 September 4</strong>, Back Country Excurion was officially established with an aim to increase tourism development
+                    in Nepal. With the spontaneous beauty and freshness of nature, Nepal is at top of tourism business. We initially started with some 
+                    packages only But now we provide all kinds of journey all over Nepal in an affordable price with highly skilled and educated guide.
+                    You can get more information and our travel journey on our official 
+                    <a class="p-tag" href="https://www.instagram.com/neup_sudip/" target="_blank" rel="noopener noreferrer">Instagram, </a>
+                    <a class="p-tag" href="https://www.facebook.com/SudipGKUN621" target="_blank" rel="noopener noreferrer">Facebook, </a>
+                    <a class="p-tag" href="https://twitter.com/neup_Sudip" target="_blank" rel="noopener noreferrer" >Twitter </a>  and         
+                    <a class="p-tag" href="https://www.youtube.com/channel/UCX4u_oLWRitQofaup9iYItA" target="_blank" rel="noopener noreferrer">Youtube</a>
+                    page. The CEO of our company is <strong>Sudip Neupane </strong> (former student at Herald College affiliated with UK University).
+                
+
+                </p>
+            </div>    
+            <div class="journey-img">
+                <img src="img/journey.jpg" alt="">
+            </div> 
+        </div>
+        
+    </section>
+
+    <div id="change" onclick="showSettings();" class="settings">
+        <i class="fas fa-users-cog set-icon fa-3x"></i>
+        <p style="font-size: 15px; font-weight: 600;">Settings</p>
+    </div>
+    
+    <div class="set-div hidden">
+
+        <div class="in-out">
+            <div onclick="changeView('one-1');">
+                <i class="fas fa-chevron-circle-up fa-3x"></i>
+                <p>Background Contrast</p>
+            </div>
+            <div onclick="changeView('one-2');">
+                <i class="fas fa-chevron-circle-down fa-3x"></i>
+                <p>Background Contrast</p>
+            </div>
+        </div>
+
+        <div class="in-out">
+            <div onclick="changeView('one-3');">  
+                <i class="fas fa-font fa-2x"></i>
+                <i class="fas fa-font fa-3x"></i>
+                <p>Increase Font</p>
+            </div>
+            <div onclick="changeView('one-4');">
+                <i class="fas fa-font fa-3x"></i>
+                <i class="fas fa-font fa-2x"></i>
+                <p>Decrease Font</p> 
+            </div>
+        </div>
+
+        <div class="in-out">
+            <div onclick="changeView('one-5');">  
+                <i class="fas fa-font fa-3x" ></i>
+                <p>Front Contrast</p>
+            </div>
+            <div onclick="changeView('one-6');">
+                <i class="fas fa-font fa-3x" style="opacity: 0.3;"></i>
+                <p style="opacity: 0.3;">Front Contrast</p> 
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p id="text">Join Us today for getting special offers and discounts.</p>
+            <div class="footer-content">
+                <div class="profile">
+                    <h3>Our Services</h3>
+                    <p class="footer-text">Honeymoon Package</p>
+                    <p class="footer-text">Flight Tickets</p>
+                    <p class="footer-text">Trekking and Camping</p>   
+                </div>
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p class="footer-text">&#x1F4CD; HCK New Facility, Bhagawati Marg, Kathmandu</p>
+                    <p class="footer-text">☎ 01 - 4010120, 01 - 4010121</p>
+                    <p class="footer-text">&#128231; info@backcountryexcursion.com  </p>
+                </div>
+                <div class="follow">
+                    <h3>Follow Us</h3>
+                    <div class="footer-img">
+                        <a href="https://www.instagram.com/neup_sudip/" target="_blank" rel="noopener noreferrer"><img src="img/intagram.png" alt="intagram"></a>
+                        <a href="https://www.facebook.com/SudipGKUN621" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" alt="facebook"></a>
+                        <a href="https://twitter.com/neup_Sudip"        target="_blank" rel="noopener noreferrer"><img src="img/twitter.png" alt="twitter"></a>           
+                        <a href="https://www.youtube.com/channel/UCX4u_oLWRitQofaup9iYItA" target="_blank" rel="noopener noreferrer"><img src="img/youtube.png" alt="youtube"></a>
+
+                    </div>                                    
+                </div>
+            </div>
+            <p class="text">© 2021 Back Country Excursion || All Rights Reserved.</p>
+        </div>
+        
+        <img onclick="topFunction()" id="top-img" src="img/top.png" alt="backToTop" title="back to top">
+        <p  onclick="showBox();" class="message">Message &#x2709;</p>
+
+        <p class="thanks hidden">Thank you for contacting us. <br>Have a nice day !</p>
+
+        <div class="direct hidden">
+            <p>Please feel free to contact us.</p>
+            <p id="no-msz" style="color: red;"></p>
+            <br>
+            <p>Please Enter Your Valid Gmail Address</p>
+            <input type="email" name="" id="email" placeholder="example@gmail.com">
+            <br> <br>
+            <p>Give us your feedback or suggestion here. <br>
+                Also, if you have any question, please Ask </p>
+            <textarea id="textarea" name="" rows="3" cols="30"></textarea>
+            <br>
+            <button onclick="thanks();" class="send" type="submit">Send</button>
+        </div>
+
+
+    </footer>
+
+
+    <script src="travel.js"></script>
+    
+    
+</body>
+</html>

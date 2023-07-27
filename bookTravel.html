@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCEX - Book Travel</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="icon ion-md-close"></i>
+                </div>
+    
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="LOGO" title="Home Page">
+                    </a>
+                </div>
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home <i class="fas fa-home"></i></a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">Destinations ▼</a>
+                        <ul class="sub-menu"> 
+                            <li>
+                                <a href="destinations.html">View All</a>   
+                            </li>
+                 
+                            <li>
+                                <a href="#">Top Destinations ➤</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="destinations.html#gosaikunda">Holy Gosaikunda</a>
+                                    </li>
+                                    <li>
+                                        <a href="destinations.html#mardi">Mardi Himal</a>
+                                    </li>  
+                                    <li>
+                                        <a href="destinations.html#poonhill">Ghorepani/Poonhill</a> 
+                                    </li>
+                                </ul>   
+                            </li>
+                            <li>
+                                <a href="destinations.html#langtang">Langtang Himal</a>         
+                            </li>
+                         </ul>
+                    </li> 
+
+                    <!-- <li> -->
+                        <!-- <a href="ourJourney.html">Our Journey <i class="fas fa-walking"></i></a>     -->
+                    <!-- </li> -->
+                    <!--  -->
+                    <!-- <li> -->
+                        <!-- <a href="#"><i class="fas fa-user" aria-hidden="true"></i> Profile </a>     -->
+                        <!-- <ul class="sub-menu"> -->
+                            <!-- <li> -->
+                                <!-- <a href="configuration.html">Log In</a> -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="">My Profile</a>     -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="">Favourite Destinations</a>  -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="">Booked Destinations</a>     -->
+                            <!-- </li>         -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+
+                    <li class="move-right btn">
+                        <a href="bookTravel.html">Book Now <i class="fas fa-calendar-check"></i></a>
+                    </li>
+                  
+                </ul>      
+            </nav>
+        </div>  
+    </header>
+
+
+    <section>
+        <p id="link1" class="breadcrumb"><a href="index.html">Home </a> >> Book Travel</p>
+
+        <p id="link2" class="breadcrumb hidden"><a href="index.html">Home </a> >> <a href="bookTravel.html">Book Travel </a> >> Confirm Booking</p>
+
+        <div class="forms">
+            <form action="#" id="book-form" >
+                <p class="form-title">Book Your Favourite Destination</p>
+
+                <p id="hidden-p" class="hidden" style="color: red;margin: 1rem 0; font-size: 1.5rem; font-weight: 600;">Please fill out all fields</p>
+
+                <div class="one-two">
+                    <p class="active-num">&#9312;</p>
+                    <p style="color: blue;">&#10132;</p>
+                    <p >&#9313;</p>
+                </div>
+
+                <select id="destinations" required>
+                    <option value="" disabled selected>Please select a destination</option>
+                    <option value="Holy Gosaikunda">Holy Gosaikunda</option>
+                    <option value="Ghorepani/ Poonhill">Ghorepani/ Poonhill</option> 
+                    <option value="Mardi Himal">Mardi Himal</option>
+                    <option value="Langtang Valley">Langtang Valley</option>
+                </select> <br>
+
+                <input type="text" name="" id="full-name" placeholder="Enter your full name" required> <br>
+
+                <div id="gender">
+                    <label for="gender">Gender: </label>
+                    <input type="radio" name="genderS" value="Male" checked="checked">Male</input>
+                    <input type="radio" name="genderS" value="Female">Female</input>
+                    <input type="radio" name="genderS" value="Other">Other</input>
+                </div>
+
+                <div class="number">
+                    <div class="num-1">
+                        <select id="country-code" required>
+                            <option value="" disabled selected>+977 - Nepal</option>
+                            <option value="Country: Nepal">+977 - Nepal</option>
+                            <option value="Country: United kingdom">+44 - United kingdom</option>
+                            <option value="Country: Australia">+61 - Australia</option> 
+                            <option value="Country: Russia">+7 - Russian Federation</option>
+                        </select>
+                    </div>
+
+                    <div class="num-2">
+                        <input id="contact-num" type="number" min="99999" max="999999999999" oninput="this.value = Math.round(this.value);" required/>
+                    </div> 
+                </div>
+
+                <input type="number" name="" id="travel-num" placeholder="select number of participant" min="1" max="8" required/> <br>
+
+                <input type="date" name="" id="date" min="2021-04-30" placeholder="Select a date" required /> <br>
+
+                <!-- <button type="submit" id="continue-btn"><p onclick="takeValue();">Continue ➤</p></button> -->
+
+                <p id="continue-btn" onclick="takeValue();">Continue ➤</p>
+            </form>
+
+            <form action="#" id="confirm-form" class="hidden-form">
+                <p class="form-title">Confirm Your Destination</p>
+                <div class="one-two">
+                    <p>&#9312;</p>
+                    <p style="color: rgb(75, 75, 155); opacity: 0.5;">&#10132;</p>
+                    <p class="active-num">&#9313;</p>
+                </div>
+
+                <div class="des-div">
+                    <p>Destination: </p>
+                    <p id="des-sel">Holy Gosaikunda</p>
+                </div>
+
+                <div class="name-div">
+                    <p>Booked By:</p>
+                    <p id="name-sel">Sudip Neupane</p>
+                </div>
+
+                <div class="num-div">
+                    <p id="code-sel">Country: Nepal</p>
+                    <p id="num-sel">9861282073</p>
+                </div>
+
+                <div class="travel-div">
+                    <p>Total Travellers:</p>
+                    <p id="travel-num-sel">8</p>
+                </div>
+
+                <div class="gender-div">
+                    <p>Gender:</p>
+                    <p id="gender-sel">Male</p>
+                </div>
+
+                <div class="date-div">
+                    <p>Booked date:</p>
+                    <p id="date-sel">2021-04-30</p>
+                </div>
+
+                <p id="display-msz" class="hidden">Thank You for your Booking &#128591; <br>We will contact you back as quick as possible.</p>
+
+                <p id="confirm-btn" onclick="displayMsz();">Confirm</p>
+                <div>
+                    <p onclick="goBack();">Go back</p>
+                    <a href="bookTravel.html">cancel</a>
+                </div>
+                
+
+            </form>
+
+        </div>
+
+        
+    </section>
+
+
+    <div id="change" onclick="showSettings();" class="settings">
+        <i class="fas fa-users-cog set-icon fa-4x"></i>
+        <p style="font-size: 15px; font-weight: 600;">Settings</p>
+    </div>
+        
+    <div class="set-div hidden">
+        <div class="in-out">
+            <div onclick="changeView('one-1');">
+                <i class="fas fa-chevron-circle-up fa-3x"></i>
+                <p>Background Contrast</p>
+            </div>
+            <div onclick="changeView('one-2');">
+                <i class="fas fa-chevron-circle-down fa-3x"></i>
+                <p>Background Contrast</p>
+            </div>
+        </div>
+        <div class="in-out">
+            <div onclick="changeView('one-3');">  
+                <i class="fas fa-font fa-2x"></i>
+                <i class="fas fa-font fa-3x"></i>
+                <p>Increase Font</p>
+            </div>
+            <div onclick="changeView('one-4');">
+                <i class="fas fa-font fa-3x"></i>
+                <i class="fas fa-font fa-2x"></i>
+                <p>Decrease Font</p> 
+            </div>
+        </div>
+        <div class="in-out">
+            <div onclick="changeView('one-5');">  
+                <i class="fas fa-font fa-3x" ></i>
+                <p>Front Contrast</p>
+            </div>
+            <div onclick="changeView('one-6');">
+                <i class="fas fa-font fa-3x" style="opacity: 0.3;"></i>
+                <p style="opacity: 0.3;">Front Contrast</p> 
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <p id="text">Join Us today for getting special offers and discounts.</p>
+            <div class="footer-content">
+                <div class="profile">
+                    <h3>Our Services</h3>
+                    <p class="footer-text">Honeymoon Package</p>
+                    <p class="footer-text">Flight Tickets</p>
+                    <p class="footer-text">Trekking and Camping</p>   
+                </div>
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p class="footer-text">&#x1F4CD; HCK New Facility, Bhagawati Marg, Kathmandu</p>
+                    <p class="footer-text">☎ 01 - 4010120, 01 - 4010121</p>
+                    <p class="footer-text">&#128231; info@backcountryexcursion.com  </p>
+                </div>
+                <div class="follow">
+                    <h3>Follow Us</h3>
+                    <div class="footer-img">
+                        <a href="https://www.instagram.com/neup_sudip/" target="_blank" rel="noopener noreferrer"><img src="img/intagram.png" alt=""></a>
+                        <a href="https://www.facebook.com/SudipGKUN621" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" alt=""></a>
+                        <a href="https://twitter.com/neup_Sudip"        target="_blank" rel="noopener noreferrer"><img src="img/twitter.png" alt=""></a>           
+                        <a href="https://www.youtube.com/channel/UCX4u_oLWRitQofaup9iYItA" target="_blank" rel="noopener noreferrer"><img src="img/youtube.png" alt="youtube"></a>
+                    </div>                                    
+                </div>
+            </div>
+            <p class="text">© 2021 Back Country Excursion || All Rights Reserved.</p>
+        </div>
+        
+        <img onclick="topFunction()" id="top-img" src="img/top.png" alt="" title="back to top">
+        <p  onclick="showBox();" class="message">Message &#x2709;</p>
+
+        <p class="thanks hidden">Thank you for contacting us. <br>Have a nice day !</p>
+        <div class="direct hidden">
+            <p>Please feel free to contact us.</p>
+            <p id="no-msz" style="color: red;"></p>
+            <br>
+            <p>Please Enter Your Valid Gmail Address</p>
+            <input type="email" name="" id="email" placeholder="example@gmail.com">
+            <br> <br>
+            <p>Give us your feedback or suggestion here. <br>
+                Also, if you have any question, please Ask </p>
+            <textarea id="textarea" name="" rows="3" cols="30"></textarea>
+            <br>
+            <button onclick="thanks();" class="send" type="submit">Send</button>
+        </div>
+    </footer>
+
+
+    <script src="travel.js"></script>
+    
+   
+</body>
+</html>
